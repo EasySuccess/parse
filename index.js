@@ -14,8 +14,9 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://ben:ben@ds011893.mlab.com:11893/heroku_d391lxtw',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || '2W5Bt9Aky3',
-  masterKey: process.env.MASTER_KEY || 'yQhdZfwoTO', //Add your master key here. Keep it secret!
+  appId: process.env.APP_ID || 'lxX0LV69TTYERyUcn1i7',
+  masterKey: process.env.MASTER_KEY || 'DxgATtpkZV2qdqxMeJ1g', //Add your master key here. Keep it secret!
+  clientKey: process.env.CLIENT_KEY || 'KAEgAPUes5SxHH9Jnw1d',
   serverURL: process.env.SERVER_URL || 'https://easysuccess-parse.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
